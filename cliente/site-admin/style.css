@@ -1,0 +1,100 @@
+.navbar navbar-expand-lg navbar-dark bg-dark .btn btn-outline-light{
+    margin-left: -100;
+}
+
+
+
+.contactos-container{
+    display: none;
+    width: 80vw;
+    margin: auto;
+}
+
+.contactos-container.show{
+    display: block; 
+ }
+
+.contact-us{
+    width: 80%;
+    margin: auto;
+    cursor: default;
+}
+
+.contact-col{
+    flex-basis: 48%;
+    margin-bottom: 30px;
+    
+}
+
+.contact-col div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    
+}
+
+.contact-col div .fa{
+    font-size: 28px;
+    color:#f44336;
+    margin: 10px;
+    margin-right: 30px;
+}
+
+.contact-col div p{
+    padding: 0;
+    
+}
+
+.contact-col div h5{
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: 400;
+}
+
+
+.contact-col input, .contact-col textarea{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 17px;
+    outline: none;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.titulo-orcamento h1{
+    width: 600px;
+    font-size: 30px;
+    margin: auto;
+    margin-top: 50px;
+    border: 2px solid rgba(0,0,0, .5);
+    border-radius: 10px;
+    text-align: center;
+    -webkit-text-stroke: 1px  #fff;
+    cursor: default;
+    margin-bottom: 50px;
+
+}
+
+
+.contact-col .form{
+    margin-top: -60px;
+}
+
+@media(max-width: 700px){
+    .contact-col div h5{
+        font-size: 15px;
+    }
+
+    
+.titulo-orcamento h1{
+    margin-top: 5px;
+    font-size: 18px;
+}
+
+.contact-col .form{
+    margin-top: 40px;
+}
+    
+}
+

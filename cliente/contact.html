@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serralharia Caixirito</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="imagens/icon caixirito.png" type="image/x-icon">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="imagens/icon caixirito.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">SOBRE NÓS</a></li>
+                    <li><a href="service.html">SERVIÇOS</S></a></li>
+                    <li><a href="Portofolio.html">PORTFÓLIO</a></li>
+                    <li><a href="contact.html">CONTACTOS</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Contacto-nos</h1>
+    </section> 
+
+<!-------- Mapa de localização e informacoes de contacto ------->
+
+<section class="location">
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3109.0937093532084!2d-9.178166285157854!3d38.8074060598498!2m3!1f0!2f0!3f0!
+    3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd192d444cbfe7ad%3A0x899327b709ded9b1!2sR.%20Augusto%20Dias%20da%20Silva%20215%2C%202660-270%20Santo%20Ant%
+    C3%B3nio%20dos%20Cavaleiros!5e0!3m2!1spt-PT!2spt!4v1675194644204!5m2!1spt-PT!2spt" width="600" height="450" style="border:0;" allowfullscreen="" 
+    loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+</section>
+
+
+<section class="contact-us">
+
+    <div class="row">
+        <div class="contact-col">
+            <div>             
+                <i class="fa fa-home"></i>
+                <span>
+                    <h5>R. Augusto Dias da Silva 278-122</h5>
+                    <p>Serralharia Caixirito</p>
+                </span>
+            </div>
+            <div>
+                <i class="fa fa-phone"></i>
+                <span>
+                    <h5>+351 913543712</h5>
+                    <p>Segunda à Sexta, das 10h às 18h</p>
+                </span>
+            </div>
+            <div>
+                <i class="fa fa-envelope-o"></i>
+                <span>
+                    <h5>al20929@espa.edu.pt</h5>
+                    <p>Envie-nos email se precisar de ajuda</p>
+                </span>
+            </div>
+        </div>
+
+
+<!-------- Form contacto ------->
+
+
+
+        <div class="contact-col">
+            <div class="titulo-orcamento"><h1>  Faça o seu pedido de orçamento</h1></div>
+
+
+            <form class="form" method="post" id="contact-form">
+
+                <input type="text" name="name" placeholder="Insira o seu nome" id="inputNome" autocomplete="off" required>
+
+                <input type="email" name="email" placeholder="Insira o endereço de e-mail" id="inputEmail" autocomplete="off" required>
+
+                <input type="text" name="subject" placeholder="Insira o seu assunto" id="inputSubject" autocomplete="off" required>
+
+                <textarea id="inputMessagem"  name="message" placeholder="Mensagem" rows="8" required></textarea>
+
+                <button type="submit" class="hero-btn red-btn" value="Enviar">Enviar mensagem</button>
+
+            </form>
+        </div>
+    </div>
+
+</section>
+
+
+
+<!-------- Rodapé ------->
+
+<section class="footer">
+    <h4>Sobre nós</h4>
+    <p>A Serralharia Caixirito oferece soluções de alta qualidade em trabalhos em alumínio, realizando projetos simples e complexos com habilidade e precisão.<br>
+        Com equipe qualificada e confiável, estão disponíveis para atender às necessidades dos clientes em diversos tipos de trabalhos em alumínio.
+    <div class="icons">
+        <a href="https://www.facebook.com/CaixiRito"><i class="fa fa-facebook" ></i></a>
+        <a href="#"><i class="fa fa-twitter" ></i></a>
+        <a href="#"><i class="fa fa-instagram" ></i></a>
+        <a href="#"><i class="fa fa-linkedin" ></i></a>
+    </div>
+    <p>Made <i class="fa fa-heart-o"></i> by João Rito</p>
+
+</section>
+
+
+
+
+<!--------JAVASCRIPT PARA MENU DE MOBILE------->
+
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+
+
+<!-------- Chamar JavaScript for contact ------->
+<script src="scriptcontacto.js"></script>
+
+
+
+
+
+</body>
+
+</html>
