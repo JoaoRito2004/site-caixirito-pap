@@ -1,6 +1,3 @@
-
-
-
 function obterDados(){
     fetch('http://localhost:3000/contactos', {
         method: 'GET',
@@ -18,8 +15,6 @@ function obterDados(){
     })
     }
     
-
-
   function injetarContactos(contactos){
 console.log(contactos);
 let htmlString =``;
@@ -48,15 +43,12 @@ for (let i =0; i<contactos.length;i++){
    Respondido
     </td>
   </tr>`;
-
-
   }
 }
 console.log(htmlString);
 document.querySelector('#contactos-tbody').innerHTML= htmlString;
 
 const replyButtons = document.querySelectorAll('.reply-contact');
-
 
 console.log(replyButtons);
 for(let j = 0; j < replyButtons.length; j++) {
@@ -96,8 +88,6 @@ const formCliente = document.querySelector("#contact-form");
 formCliente.addEventListener("submit", mandarEmail);
 
 
-
-
 function mandarEmail(event) {
   event.preventDefault();
   const form = event.target;
@@ -108,9 +98,6 @@ function mandarEmail(event) {
   const subject = form.querySelector('input[name="subject"]').value;
   const message = form.querySelector('textarea[name="message"]').value;
 
-
-
-  
 
   const emailCliente = {id,name,email,subject,message};
 

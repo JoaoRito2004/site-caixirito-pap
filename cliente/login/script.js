@@ -2,9 +2,6 @@
 const loginForm = document.querySelector("#login-Form");
 
 
-
-
-
 loginForm.addEventListener('submit', onlogin);
  
 

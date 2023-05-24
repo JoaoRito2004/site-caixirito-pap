@@ -6,8 +6,8 @@ const cors = require('cors');
 app.use(cors());
 app.use(express.json());
 
-const ETHEREAL_EMAIL = 'ottis.dooley@ethereal.email';
-const ETHEREAL_PASSWORD = 'VJ4ehVekJwsgTW4bsg';
+const ETHEREAL_EMAIL = 'myriam15@ethereal.email';
+const ETHEREAL_PASSWORD = 'vKd3jqctatsjky8XrU';
 
 
 var mysql      = require('mysql');
@@ -87,7 +87,6 @@ app.get('/contactos', function (req, res) {
 
 
 app.post('/responderContacto', function (req,res) {
-
     const id = req.body.id;
     const name = req.body.name;
     const email = req.body.email;
@@ -95,9 +94,6 @@ app.post('/responderContacto', function (req,res) {
     const message = req.body.message;
 
 console.log(id,name,email,subject,message);
-
-
-
 
 const transporter = nodemailer.createTransport({
     host: 'smtp.ethereal.email',
@@ -107,14 +103,11 @@ const transporter = nodemailer.createTransport({
         pass: ETHEREAL_PASSWORD
     }
 });
-
-
 var mailOptions = {
   from: ETHEREAL_EMAIL,
   to: email,
   subject: subject,
   text: message};
-
 transporter.sendMail(mailOptions, function(error, info){
   if (error) {
     console.log(error);
@@ -131,12 +124,7 @@ transporter.sendMail(mailOptions, function(error, info){
       });
   }
 });
-
-
-
 })
-
-
 app.listen(3000)
 
 

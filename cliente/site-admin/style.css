@@ -2,8 +2,6 @@
     margin-left: -100;
 }
 
-
-
 .contactos-container{
     display: none;
     width: 80vw;
@@ -51,7 +49,6 @@
     color: #555;
     font-weight: 400;
 }
-
 
 .contact-col input, .contact-col textarea{
     width: 100%;
